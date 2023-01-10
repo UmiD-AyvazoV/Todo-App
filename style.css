@@ -1,0 +1,306 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+
+body,
+html {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  height: 94%;
+}
+
+body {
+  background: linear-gradient(283deg, rgba(68, 105, 247, 1),rgba(246, 91, 245, 1));
+  overflow: hidden;
+}
+
+.container {
+  display: flex;
+  margin: 200px auto;
+  width: 50%;
+  min-width: 450px;
+  max-height: 800px;
+  height: 650px;
+  position: relative;
+}
+
+::placeholder {
+  color: azure;
+  font-weight: bold;
+  text-align: center;
+}
+
+.dots {
+  height: 17px;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 0.5em;
+}
+
+.dot1,
+.dot2,
+.dot3 {
+  height: 100%;
+  width: 17px;
+  border-radius: 50%;
+  margin: 0 7px 0 0;
+}
+
+.dot1 {
+  background-color: #ff605c;
+}
+
+.dot2 {
+  background-color: #ffbd44;
+}
+
+.dot3 {
+  background-color: #00ca4e;
+}
+
+/* ---------Title-area--------- */
+.text ,
+.filter {
+  width: 100%;
+  margin-left: auto;
+  visibility: hidden;
+  position: absolute;
+  top: -60px;
+  text-align: center;
+}
+
+.visible {
+  visibility: visible;
+}
+
+.text button ,
+.filter button {
+  font-size: 1.4rem;
+  background: rgba(0, 0, 0, 0.4);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(0.5px);
+  border-radius: 50%;
+  padding: .5em;
+  color: rgb(0, 162, 255);
+  border: none;
+}
+
+input[type="text"] {
+  width: 50%;
+  padding: 1em;
+  font-size: 1rem;
+  background: rgba(0, 0, 0, 0.4);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(0.5px);
+  -webkit-backdrop-filter: blur(0.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  color: white;
+}
+
+input[type="text"]:focus {
+  outline: none;
+}
+
+/* ---------Tasks and taskarea---------- */
+
+.tasks {
+  min-height: 3em;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.6em;
+  margin: 0.7em auto;
+  border-radius: 5px;
+  background: rgba(0, 0, 0, 0.3);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.taskarea p {
+  color: white;
+  text-transform: capitalize;
+  margin-top: 15px;
+}
+
+.taskarea {
+  overflow-y: scroll;
+  scrollbar-width: none;
+  width: 75%;
+  min-width: 55%;
+}
+
+.uppertaskarea {
+  display: flex;
+  justify-content: center;
+  height: 65%;
+}
+
+.taskarea::-webkit-scrollbar {
+  width: 8px;
+}
+
+.taskarea::-webkit-scrollbar-thumb {
+  background: #1aeeef;
+  border-radius: 50%;
+}
+
+
+/* ---------Task-update and delete--------- */
+
+.task-update-delete {
+  display: flex;
+  align-items: center;
+  margin-left: 0.7em;
+}
+.delete,
+.update {
+  font-size: 1.4rem;
+}
+.delete a {
+  margin-left: 0.8em;
+  color: #f12727;
+}
+
+.update a {
+  color: rgb(0, 162, 255);
+}
+
+.completed {
+  text-decoration: line-through;
+  background: rgba(4, 243, 223, 0.3);
+}
+
+/* --------Sider-area--------- */
+
+.sider {
+  width: 100%;
+  overflow: hidden;
+  background: rgba(0, 0, 0, 0.4);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(0.5px);
+  -webkit-backdrop-filter: blur(0.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 20px;
+}
+
+/* ------My-name-------- */
+
+.my-name {
+  border-radius: 5px;
+  padding: 0.6em;
+  width: 100%;
+  margin: auto;
+  margin-bottom: 0.5em;
+}
+
+.my-name h2 {
+  margin: 0;
+  text-transform: capitalize;
+  text-shadow: 2px 2px 5px rgba(31, 38, 135, 0.37);
+  text-align: center;
+}
+
+/* ---------new-task-button----------- */
+
+.new-task-button ,
+.search-task-button ,
+.del-task-button {
+  border-radius: 10px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.new-task-button a ,
+.del-task-button a ,
+.search-task-button a {
+  text-decoration: none;
+  border-radius: 5px;
+  padding: 0.9em;
+  color: white;
+  margin-right: 1em;
+  background: rgba(0, 0, 0, 0.4);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(0.5px);
+  -webkit-backdrop-filter: blur(0.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+/* --------incomplete-task-------- */
+
+.incomplete-task {
+  border-radius: 5px;
+  height: 5%;
+  width: 70%;
+  color: white;
+}
+
+.incomplete-task p {
+  text-transform: capitalize;
+  font-size: medium;
+  text-shadow: 4px 4px 5px rgba(31, 38, 135, 0.37);
+  font-weight: 400;
+}
+
+.incomplete-task-up {
+  display: flex;
+  justify-content: center;
+}
+
+/* -----------Hover-area---------- */
+
+.new-task-button a:hover ,
+.del-task-button a:hover ,
+.search-task-button a:hover {
+  background: rgba(0, 0, 0, 0.8);
+  border: 3px solid rgba(12, 238, 208, 1);
+}
+
+.tasks:hover {
+  border: 3px solid rgba(12, 238, 208, 1);
+}
+
+.dot1:hover {
+  filter: contrast(200%);
+}
+
+.dot2:hover {
+  filter: contrast(200%);
+}
+
+.dot3:hover {
+  filter: contrast(200%);
+}
+
+.update:hover {
+  filter: contrast(200%);
+}
+
+.delete:hover {
+  filter: brightness(240%);
+}
+
+.text:hover button ,
+.filter:hover button {
+  filter: brightness(240%);
+  color: aqua;
+}
+
+.btn {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 5px;
+}
+
+.alert {
+  position: absolute;
+  width: 50%;
+  top: -70px;
+  left: 30%;
+  text-align: center;
+  border-radius: 50px;
+}

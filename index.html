@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <title>To Do List App</title>
+</head>
+<body>
+
+  <div class="container">
+
+    <div class="text">
+      <form id="textForm">
+        <input type="text" class="inp" placeholder="New Todo..."><button type="submit" class="plus"><i class="fa-solid fa-plus"></i></button>
+      </form>
+    </div>
+    <div class="filter">
+      <form id="filterForm">
+        <input type="text" id="filter" placeholder="Search Todo..."><button type="submit" class="search"><i class="fa-solid fa-magnifying-glass"></i></button>
+      </form>
+    </div>
+    
+    <!-- Task Area -->
+    <div class="sider">
+      <div class="dots">
+        <div class="dot1"></div>
+        <div class="dot2"></div>
+        <div class="dot3"></div>
+      </div>
+  
+      <div class="my-name">
+        <h2>
+          <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=30&pause=1000&color=green&center=true&vCenter=true&width=433&lines=To Do List App">
+        </h2>
+      </div>
+  
+      <div class="incomplete-task-up">
+        <div class="incomplete-task">
+          <p>Sizin <span style="color: #FFBD44;"><span class="count"></span> Tamamlanmamış</span> Tapşırığınız Var 😊</p>
+        </div>
+      </div>
+  
+      <div class="uppertaskarea">
+        <div class="taskarea">
+        </div>
+      </div>
+  
+      <div class="btn">
+        <div class="new-task-button">
+          <a href="#">Todo Əlavə Et</a>
+        </div>
+        <div class="search-task-button">
+          <a href="#">Todo Axtar</a>
+        </div>
+        <div class="del-task-button">
+          <a href="#">Bütün Todo-ları Sil</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+  <script src="app.js"></script>
+</body>
+</html>
