@@ -4,17 +4,15 @@ body,
 html {
   margin: 0;
   font-family: "Roboto", sans-serif;
-  height: 94%;
 }
 
 body {
   background: linear-gradient(283deg, rgba(68, 105, 247, 1),rgba(246, 91, 245, 1));
-  overflow: hidden;
 }
 
 .container {
   display: flex;
-  margin: 200px auto;
+  margin: 150px auto;
   width: 50%;
   min-width: 450px;
   max-height: 800px;
